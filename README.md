@@ -7,10 +7,17 @@
 <p align="center">
 Welcome to part two of five for the series of the SOC automation project. If you haven't seen part one, where we go over how to build a diagram for this lab. I highly recommend you go and read that. Today, our objective is to install our applications and virtual machines. By the end of the video, you should have one Windows 10 machine with Sysmon installed, one Wazuh server, and one Hive server. 
   
-For those that don't know what Waszuh is, their site will provide a very high-level overview. Wazuh is an open-source cyber security platform and integrates SIEM and XDR capabilities in a unique solution. They provide multiple capabilities such as security analytics, intrusion detection, incident response, and many more. They have three main components that build up Wasa, which is the indexer, server, and dashboard. 
-
-As for the Hive, this is a 4-in-1 open-source security incident response platform, and we will use this as our case management system. As for our virtual machine, we will be using Windows 10 as our client PC, and I use Ubuntu 22.04 for both Wazuh and the Hive. Again both wah and the hive will be spun up in the cloud however I will be using a virtual machine to set up my Windows 10 client hosted on my esxi server but you can always use Virtual box or the cloud and if you aren't too sure on how to install virtual box and sysmon to get set up with Windows 10 I'll start replaying a previous video that I have done in the past to show you otherwise feel free to skip ahead 
-
+For those who don't know what Wazuh is, their site will provide a very high-level overview. Wazuh is an open-source cyber security platform that integrates SIEM and XDR capabilities in a unique solution. They provide multiple capabilities such as security analytics, intrusion detection, incident response, and many more. They have three main components that build up Wasa, which is the indexer, server, and dashboard. 
+<br />
+<br />
+<img src="https://snipboard.io/Z1a7dV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<img src="https://snipboard.io/Nfka0C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<img src="https://snipboard.io/Nfka0C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+As for the Hive, this is a 4-in-1 open-source security incident response platform, and we will use this as our case management system. As for our virtual machine, we will be using Windows 10 as our client PC, and I use Ubuntu 22.04 for both Wazuh and the Hive. Again both Wazuh and the Hive will be spun up in the cloud, however, I will be using a virtual machine to set up my Windows 10 client hosted on my ESXi server. You can always use Virtual Box or the cloud and if you aren't too sure how to install Virtual Box and Sysmon to get set up with Windows 10, I'll walk you through it. Otherwise, feel free to skip ahead. 
 <br />
 <br />
 <img src="https://snipboard.io/cLrCtR.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
