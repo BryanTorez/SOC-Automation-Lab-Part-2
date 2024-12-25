@@ -12,21 +12,32 @@ For those who don't know what Wazuh is, their site will provide a very high-leve
 <br />
 <img src="https://snipboard.io/Z1a7dV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<img src="https://snipboard.io/Nfka0C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/dUBCD8.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<img src="https://snipboard.io/Nfka0C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-As for the Hive, this is a 4-in-1 open-source security incident response platform, and we will use this as our case management system. As for our virtual machine, we will be using Windows 10 as our client PC, and I use Ubuntu 22.04 for both Wazuh and the Hive. Again both Wazuh and the Hive will be spun up in the cloud, however, I will be using a virtual machine to set up my Windows 10 client hosted on my ESXi server. You can always use Virtual Box or the cloud and if you aren't too sure how to install Virtual Box and Sysmon to get set up with Windows 10, I'll walk you through it. Otherwise, feel free to skip ahead. 
+<img src="https://snipboard.io/niqex0.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="https://snipboard.io/cLrCtR.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+As for the Hive, this is a 4-in-1 open-source security incident response platform, and we will use this as our case management system. As for our virtual machine, we will be using Windows 10 as our client PC, and I use Ubuntu 22.04 for both Wazuh and the Hive. Again both Wazuh and the Hive will be spun up in the cloud, however, I will be using a virtual machine to set up my Windows 10 client hosted on my ESXi server. You can always use Virtual Box or the cloud and if you aren't too sure how to install Virtual Box and Sysmon to get set up with Windows 10, I'll walk you through it. Otherwise, you can just skip ahead. 
 <br />
-<img src="https://snipboard.io/Nfka0C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<img src="https://snipboard.io/ZlMhSY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <p align="center">
-In this part one series, we will be focusing on creating our diagram and mapping out how we want to build out our lab logically. The main thing here is to allow us to build a visual, so then we can start to understand how data might flow and of course, what are the pieces required to make this all work. The reason I am doing it this way is because during some interviews some would provide you with a whiteboard and ask you to draw a diagram of a basic lab and secure it. Now hopefully by participating in this lab, you'll gain a lot more confidence in doing so. 
+First, we'll begin installing Windows 10 by installing Virtual Box. Head over to their site virtualbox.org. Now depending on the operating system you have that is the one that we will be downloading. So we can go ahead and click download Virtual Box 7.0 from here.
+<br />
+<br />
+<img src="https://snipboard.io/LCJyP5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+We know that this machine that I'm using is a Windows host machine, So I'll go ahead and click "Download" on that. While that's downloading we can actually go ahead and check out the sha256 check sums as well. 
+ <br />
+<br />
+<img src="https://snipboard.io/LCJyP5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br /> 
+  
+  When you go into the check sums it will provide you with a list of Shaw 256 hashes and then this way we can verify the downloaded file to determine whether or not it has been altered so let's go ahead and do that we'll head over to the downloads directory in which our file lives in we'll open Powershell and then I'll do a get file hash virtual box hit tab click on enter and by default sh 256 is generated what we can
 <br />
 <br />
 <img src="https://snipboard.io/TEnY3O.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
