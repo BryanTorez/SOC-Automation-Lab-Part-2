@@ -168,7 +168,34 @@ Now we are presented with two media choices. Use a USB flash drive or an ISO fil
 <br />
 <br />
 <br />
-We'll open up the window for the virtual box and click on "New". Here we can enter a name for a virtual machine and select the directory where we want to store our files. I'll go ahead and name our virtual machine "demo". I'll leave the folder as is for the iso image. I will click on the drop down. Click on "Other" and now I'll find the iso image that I just downloaded. It was listed under documents and double click the windows ISO at the bottom there's an option where you can check skip unattended installation which I will do actually that way I can install the operating system manually now you can uncheck this or check this it's up to you I'll click on next here we have the options to configure our virtual machine specifications however do be aware that this will be relying on your computer's specifications for this demo I'll set my base memory for this virtual machine as 4 gigs and we'll have it as one CPU I'll click on next for the virtual hard disk I'll leave as 50 gigs and hit next now this will give you a nice summary as to what your settings are for this virtual machine if you're good to go click on finish and now we can go ahead and start powering it on to power it on you just hit this arrow that says start now once it's running we should be able to start seeing this Windows 10 setup so we'll go ahead and select next
+We'll open up the window for the virtual box and click on "New". Here we can enter a name for a virtual machine and select the directory where we want to store our files. I'll go ahead and name our virtual machine "demo". I'll leave the folder as is for the iso image. I will click on the drop-down. Click "Other" and now I'll find the iso image that I just downloaded.
+<br />
+<br />
+<img src="https://snipboard.io/2FCxSG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+There's an option where you can check "Skip unattended installation" which I will do. That way I can install the operating system manually. You can uncheck this or check it, it's up to you. Click on "Next". 
+<br />
+<br />
+<img src="https://snipboard.io/zo5ZjI.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Here we have the option to configure our virtual machine specifications. However, do be aware that this will be relying on your computer's specifications for this demo. I'll set my base memory for this virtual machine as 4 gigs and we'll have it as one CPU. I'll click on "Next" for the virtual hard disk. I'll leave it as 50 gigs and hit "Next".
+<br />
+<br />
+<img src="https://snipboard.io/UdPvM2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/VglP3G.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Now this will give you a nice summary as to what your settings are for this virtual machine. If you're good to go click "Finish" and now we can go ahead and start powering it on. To power it on, you just hit the arrow that says "Start Now". once it's running we should be able to start seeing this Windows 10 setup. So we'll go ahead and select "Next".
 <br />
 <br />
 <img src="https://snipboard.io/GmB6vw.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
