@@ -30,25 +30,156 @@ First, we'll begin installing Windows 10 by installing Virtual Box. Head over to
 <img src="https://snipboard.io/LCJyP5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-We know that this machine that I'm using is a Windows host machine, So I'll go ahead and click "Download" on that. While that's downloading we can actually go ahead and check out the sha256 check sums as well. 
- <br />
+We know that this machine that I'm using is a Windows host machine, So I'll go ahead and click "Download" on that.
 <br />
-<img src="https://snipboard.io/LCJyP5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<img src="https://snipboard.io/2lta9c.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br /> 
-  
-  When you go into the check sums it will provide you with a list of Shaw 256 hashes and then this way we can verify the downloaded file to determine whether or not it has been altered so let's go ahead and do that we'll head over to the downloads directory in which our file lives in we'll open Powershell and then I'll do a get file hash virtual box hit tab click on enter and by default sh 256 is generated what we can
 <br />
 <br />
-<img src="https://snipboard.io/TEnY3O.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+While that's downloading, we can go ahead and check out the sha256 checksums as well. When you go into the checksums, it will provide you with a list of sha256 hashes, and then this way we can verify the downloaded file to determine whether or not it has been altered.
+<br />
+<br />
+<img src="https://snipboard.io/Nrctv8.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br /> 
+<img src="https://snipboard.io/vWkugN.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br /> 
+<br />
+<br />
+So let's head over to the downloads directory in which our file lives. We'll open Powershell and then I'll do a get-file hash. By default, sha256 is generated.
+<br />
+<br />
+<img src="https://snipboard.io/cnwbSi.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/0elMb5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/B9H2mL.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <p align="center">
-To create our diagram, I'll use a site called draw.io because it is free to use and quick to access. The one thing to keep in mind is that these diagrams do not need to be pretty. You just need to do it and build it out. Now later down the road you can go ahead and make it look pretty, especially if you are going to present this to a client, but if it's just for us in a lab environment. I'd rather you put in the work and focus on doing it, versus spending hours trying to make it look visually appealing.
+What we can do is copy and paste it in and see if it matches up. So we know for a fact that the file in transit was not changed whatsoever. Now we can go ahead and double-click the Virtual box to start installing it.
+<br />
+<br />
+<img src="https://snipboard.io/UdCZ7I.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/2jImHi.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/i5xGpb.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Now, we might get hit with a compatibility issue or missing some software dependencies but we'll deal with that when the time comes. Click on Yes. From here we notice that there is a Microsoft Visual C++ 2019 package dependency. So what we'll do is we'll go ahead and install this dependency and I'll put the link down in the description below just in case you get hit with this dependency as well.
+<br />
+<br />
+<img src="https://snipboard.io/zms016.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/3LfQsU.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 <br />
 <br />
 <p align="center">
-We'll start off by heading over to their site at draw.io.
+I went and downloaded the dependency and installed it. So now we can go ahead and double-click the virtual box installer again. Hit yes. And now it doesn't give me that dependency error anymore.
+<br />
+<br />
+<img src="https://snipboard.io/QP5hGu.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/bYOvWH.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/eATVDh.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+We are presented with some of the features that we can install and they are all set to be installed by default, but you do have the option to customize it which is quite nice. Here you can change where you want the virtual box to be installed. For example, if you don't have enough space in the C drive, you can always install it in a different drive if you like. Hit next.
+<br />
+<br />
+<img src="https://snipboard.io/bs15qd.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+This will provide you with a warning that it will reset your network connection and temporarily disconnect you. Hit yes and install the needed dependencies.
+<br />
+<br />
+<img src="https://snipboard.io/q1EL2X.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Once it's done installing, all you have to do is click on "Finish" and then the virtual box should automatically pop up.
+<br />
+<br />
+<img src="https://snipboard.io/VPRb1A.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/yE3TnU.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+We'll navigate to the link which I'll list down in the description for you, and once we're on this page we can go ahead and scroll down and click on "Download Tool Now" This will download what is called a media creation tool which will help you generate a Windows ISO image file.
+<br />
+<br />
+<img src="https://snipboard.io/2EBXvK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+So we can go ahead and double click to open the file. Click on yes. And now it will get a few things ready until you'll eventually be presented with this license agreements page. And we can go ahead and hit "Accept". It will say getting a few things ready again. Once it is done check checking things you should be presented with this screen.
+<br />
+<br />
+<img src="https://snipboard.io/zNC4xh.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/kfyKOG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/aoCwKV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Displaying two options. One to upgrade your PC or two create an installation media. What we want to select is "Create the installation media" and hit "Next". You have the option to customize your settings such as language addition and architecture, but I'll leave mine checked to use the recommended option for this PC, and hit "Next".
+<br />
+<br />
+<img src="https://snipboard.io/92kLpB.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/1PJYA4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Now we are presented with two media choices. Use a USB flash drive or an ISO file. We'll select the ISO file and hit "Next". Save the ISO file anywhere you like and it will start downloading. Now that my Windows ISO image has been successfully downloaded we can now jump over to our virtual box and start creating a virtual machine.
+<br />
+<br />
+<img src="https://snipboard.io/zKEirl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+We'll open up the window for the virtual box and click on "New". Here we can enter a name for a virtual machine and select the directory where we want to store our files. I'll go ahead and name our virtual machine "demo". I'll leave the folder as is for the iso image. I will click on the drop down. Click on "Other" and now I'll find the iso image that I just downloaded. It was listed under documents and double click the windows ISO at the bottom there's an option where you can check skip unattended installation which I will do actually that way I can install the operating system manually now you can uncheck this or check this it's up to you I'll click on next here we have the options to configure our virtual machine specifications however do be aware that this will be relying on your computer's specifications for this demo I'll set my base memory for this virtual machine as 4 gigs and we'll have it as one CPU I'll click on next for the virtual hard disk I'll leave as 50 gigs and hit next now this will give you a nice summary as to what your settings are for this virtual machine if you're good to go click on finish and now we can go ahead and start powering it on to power it on you just hit this arrow that says start now once it's running we should be able to start seeing this Windows 10 setup so we'll go ahead and select next
+<br />
+<br />
+<img src="https://snipboard.io/GmB6vw.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/l0eQiS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+  I will click on this and select the drop down click on other and now I'll find the iso image that I just downloaded it was listed under documents and double click the windows ISO at the bottom there's a
 <br />
 <br />
 <img src="https://snipboard.io/ldmF1R.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
