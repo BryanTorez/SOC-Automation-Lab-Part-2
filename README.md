@@ -307,4 +307,105 @@ You might have noticed that there are various EXE enabled for Sysmon. We want to
 <br />
 <br />
 <br /> 
-and double-check if we have or have not installed cismon we can do this in a couple ways so first and foremost we can go in the bottom left corner click on the start menu and type in Services hit enter this should pop up the services that are installed onto your computer and then what you want to type in is or actually what you want to click and type is s and then you want to look for cismon if there's no cismon installed then you will not see sysmon so in this case I can confirm that I do not have sysmon installed the second way we can do it is go through event logs we can do this by typing Event Viewer hit enter there this will show you all of the logs associated with this machine so what you want to do is click on applications service logs open that up and then you want to expand Microsoft from there expand windows and now we want to look for cismon so if I scroll all the way down is there going to be any cismon and no doesn't seem that cismon is installed so what we want to do now is Type in cismon again 64 tab now that auto completes and now we want to install the configuration by using the TAC I command right here install service and Driver optionally take a config configuration file so we'll press space and type in Symon and then we can tab until we find it or we can just type in cismon config since we know that we named it that way hit Tab and it'll autoc complete from
+To double-check if we have or have not installed Sysmon. We can do this in a couple of ways. So first and foremost, we can go to the bottom left corner. Click on the start menu and type in "Services". Hit "Enter". This should pop up the services that are installed on your computer. And then what you want to type in is "S" and then you want to look for Sysmon. If there's no Sysmon installed, then you will not see Sysmon. so in this case I can confirm that I do not have Sysmon installed.
+<br />
+<br />
+<img src="https://snipboard.io/6FDOwM.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/zfPohb.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+The second way we can do it is to go through event logs. We can do this by typing "Event Viewer". Hit "Enter". This will show you all of the logs associated with this machine. So what you want to do is click on applications service logs. Open that up and then you want to expand Microsoft. From there, expand windows and now we want to look for Sysmon. If I scroll down, is there going to be any Sysmon, and no doesn't seem that Sysmon is installed.
+<br />
+<br />
+<img src="https://snipboard.io/0ga7pP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/9HU4vf.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/PJGDR8.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/NPthwz.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+So what we want to do now is type in ".\Sysmon64.exe -i .\sysmonconfig.xml". We want to install the configuration by using the TAC I command (Install service and driver optionally take a config configuration file). Hit "Enter" and this will pop up, which is essentially your license and agreement. You can hit agree and then it should go ahead and run its course and install Sysmon.
+<br />
+<br />
+<img src="https://snipboard.io/iZ7NDH.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/AWxBZs.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+So to double-check to make sure that Sysmon is installed, we can run through those steps that I've shown previously. Click the Windows button. Type in "Event Viewer". Click on "Applications and service logs" and expand "Microsoft" and then "Windows". Scroll all the way down and see if you have Sysmon. In this case, we do. beautiful So that is how you install Sysmon and get that up and running.
+<br />
+<br />
+<img src="https://snipboard.io/3Kr0St.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/5fHhq8.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/hpnZbJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+We can click on "Operational" and this will give you a bunch of telemetry about your system and help you catch evil. Now that we have our Windows 10 client machine installed, along with Sysmon, let's start setting up Wazuh next. I'll be using Wazuh Digital Ocean as my cloud provider. If you want to follow along, you can sign up using the link provided down below. That will provide you with $200 credit for the first 60 days but you must provide a valid credit card.
+<br />
+<br />
+<img src="https://snipboard.io/KV5qep.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+To begin I'm going to be building our Wasa server. First, so we can create that by clicking on the top right corner called "Droplets". From here you want to select the region that you're currently residing in. In my case, I'll just select "San Francisco". Scroll down and we want to select Ubuntu and version 22.041. As for the droplet type, we'll want 50 gigs of RAM and 50 gigs of hard drive space. So we can go with the option of $48 a month. Now again with the $200 credit. This doesn't seem too much.
+<br />
+<br />
+<img src="https://snipboard.io/Ku7SYn.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/Jp8UOS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/9LrIvF.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/zm5QKl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+So this is why I'm going to be choosing, the basic plan, Premium Intel, and the $48 a month. Scroll down. We want to create a password or an SSH key whichever suits you, but for me, I'm just going to create a password. Do make sure that you use a password manager because we will expose this to the internet eventually, but not in the beginning. Once you put in your password, scroll down. 
+<br />
+<br />
+<img src="https://snipboard.io/om2z3c.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+You'll see an option to change your hostname. I'll change this to Wazuh. Scroll down and then hit create droplet at the bottom. While we wait for this droplet to be created, I highly recommend you start set setting up a firewall, otherwise you'll get spammed from external scanners. We can create a firewall by heading over to networking on the left-hand side and then the "Firewalls" tab. Click on "Create Firewall". Now by default, we have SSH open to the public. I'm going to name this as "Firewall". I am going to select all TCP I'll remove all IPS and only add your IP.
+<br />
+<br />
+<img src="https://snipboard.io/mkAaf2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/QfhXTK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/UwQCod.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+now to get your public IP open up a new tab and go into what is my IP address and then you can select the first link and then you should see your public IP address copy that out and then paste it into your sources now you want to do the same for UDP as well just in case once that's done scroll all the way down and click on create firewall once your firewall had been created cre we can start adding our virtual machine onto this firewall now the reason why we're doing this if you don't create Rules by default SSH is open to the public so anybody or any scanners out there will hit your box and try to break in but because we specified our public IP our virtual machine is only accessible through us let's head over to our virtual machines by selecting droplets on the left hand side and here we can see the public I i p of our Wasa server let's click on Wasa and from there we want to select networking scroll down until you see firewalls click on edit and then you want to select your firewall that you just created from your firewall click on droplets and select add droplets look for your virtual machine my case was Wasa I'll select Wasa and click on ADD droplet now the firewall will be protecting our virtual machine there are a couple of ways that you can access your virtual machine firstly you can use something like putty to use SSH or from the droplets tab under Wasa you can click on the access Tab and then select launch droplet console once we have successfully sshed into our virtual machine we can begin performing some updates and upgrades now because by default we're under root we can perform this by typing in apt-get update and at-et upgrade you will eventually get presented with this screen we can just hit enter and finally It'll ask you which Services should be restarted again we can just hit enter once it's been finished updating and upgrading we can start with the installer of Wasa to get started with Wasa we can run a curl command that is also found on their website but I'll leave it here as well as in the description down below if you wanted to just copy that after aoup couple of minutes Wasa should be finished installing now there is one thing to keep in mind and that is the username and password you want to make sure that you copy the username admin as well as your password because you will need it to log in to your wasel dashboard so let's go and do that right now to log into wasal do take note of your public IP of the server in this case my public IP for Wasa is 15923 1739 I'll go ahead and copy Cy this and then open up a new tab and in your browser make sure you type in HTTPS and then paste in the IP now we can click on Advanced proceed and we're
+  
