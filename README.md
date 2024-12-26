@@ -490,6 +490,91 @@ To log into Wazuh, do take note of your public IP of the server, in this case, m
 <br />
 <br />
 <br /> 
-Now we're presented with wasa's dashboard we can put in our admin user and paste in the password and now we're in perfect awesome we have our client machine and Wasa up and running the next is to install the hive similar to Wasa we'll Install TheHive be using Ubuntu 20 2.04 to begin select create at the top right corner and select droplet you want to choose the region that's closest to you I'll select Toronto scroll down we'll use create droplet you want to make sure that the hive is placed in the firewall that you created earlier to do that we can click on the hive go into networking scroll down to firewalls click on your firewall go to droplet and then add droplet now we want to type in our host name which is the hive and click on ADD droplet perfect now both wah and the hive is being protected by our firewall and it can only be accessible by Us and nobody else I've opened up a new Tab and sshed into the hive now we can start installing some prerequisites again this could be found in their documentation and I will also leave it in the description so you can just easily copy and paste with the hive we must install four components the first one is Java second is Cassandra third is elastic search and fourth is the hive itself once we finished installing the prerequisites we can start installing Java whenever you are presented with this screen you can go ahead and hit enter once Java had finished installing the next one is Cassandra then we can install elastic search and finally we can install the hive this whole process for installing the hive and Wasa takes about 10 to 15 minutes but once it's finished installing the next step is to configure it now that we have installed ourvirtual machines Wasa and the hive we must configure these to get them to work across the board and we will do this in the next episode that is it for the video and if you had some problems setting these up please let me know in the comment section down below and I'll try my best to help you out
-
-  
+Now we're presented with Wazuh's dashboard. We can put in our admin user and paste in the password. Now we're in. Perfect. We have our client machine and Wazuh up and running. The next thing is to install the Hive. Similar to Wazuh, we'll install the Hive by using Ubuntu 22.04. 
+<br />
+<br />
+<img src="https://snipboard.io/l3Hunt.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/cNFXOn.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+To begin, select "Create" at the top right corner and select "Droplet". You want to choose the region that's closest to you. I'll select San Francisco. For the specs, I'll use the 8 gigs, similar to Wazuh. Scrolling down, you can use an SSH key or password. I'll be using a password.
+<br />
+<br />
+<img src="https://snipboard.io/Ntbz03.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/UcHpKr.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/P3BCfk.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/f8he4T.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+For the hostname, I'll name it "TheHive". Then select "Create Droplet". You want to make sure that the Hive is placed in the firewall that you created earlier. To do that we can click on "TheHive". Go into "Networking". Scroll down to "Firewalls". 
+<br />
+<br />
+<img src="https://snipboard.io/GLyHW5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/hCUpK8.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/vq1eNh.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/KsrxAI.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Click on your firewall. Go to Droplet and then "Add Droplet". Now we want to type in our hostname, which is "TheHive" and click on "Add Droplet". Perfect. Now both Wazuh and the Hive is being protected by our firewall and it can only be accessible by Us and nobody else.
+<br />
+<br />
+<img src="https://snipboard.io/qYvw1Q.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/fzAqZJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/7GT1nP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/2SIVbT.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+I've opened up a new tab and SSH'd into the Hive. Now we can start installing some prerequisites. Again this could be found in their documentation and I will also leave it in the description so you can just easily copy and paste. With the Hive we must install four components. The first one is Java. Second is Cassandra. Third is Elastic Search, and fourth, is the Hive itself.
+<br />
+<br />
+<img src="https://snipboard.io/P1dhDQ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/RuNfe2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Once we finish installing the prerequisites we can start installing Java. Whenever you are presented with this screen, you can go ahead and hit "Enter". Once Java has finished installing, the next one is Cassandra. Then we can install Elastic Search, and finally, we can install the Hive. This whole process of installing the Hive and Wazuh takes about 10 to 15 minutes, but once it's finished installing, the next step is to configure it.
+<br />
+<br />
+<img src="https://snipboard.io/Do9RNs.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/RuNfe2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/Hqp6OJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Now that we have installed our virtual machines Wazuh and the Hive, we must configure these to get them to work across the board, and we will do this in the next episode.
