@@ -407,5 +407,89 @@ You'll see an option to change your hostname. I'll change this to Wazuh. Scroll 
 <br />
 <br />
 <br /> 
-now to get your public IP open up a new tab and go into what is my IP address and then you can select the first link and then you should see your public IP address copy that out and then paste it into your sources now you want to do the same for UDP as well just in case once that's done scroll all the way down and click on create firewall once your firewall had been created cre we can start adding our virtual machine onto this firewall now the reason why we're doing this if you don't create Rules by default SSH is open to the public so anybody or any scanners out there will hit your box and try to break in but because we specified our public IP our virtual machine is only accessible through us let's head over to our virtual machines by selecting droplets on the left hand side and here we can see the public I i p of our Wasa server let's click on Wasa and from there we want to select networking scroll down until you see firewalls click on edit and then you want to select your firewall that you just created from your firewall click on droplets and select add droplets look for your virtual machine my case was Wasa I'll select Wasa and click on ADD droplet now the firewall will be protecting our virtual machine there are a couple of ways that you can access your virtual machine firstly you can use something like putty to use SSH or from the droplets tab under Wasa you can click on the access Tab and then select launch droplet console once we have successfully sshed into our virtual machine we can begin performing some updates and upgrades now because by default we're under root we can perform this by typing in apt-get update and at-et upgrade you will eventually get presented with this screen we can just hit enter and finally It'll ask you which Services should be restarted again we can just hit enter once it's been finished updating and upgrading we can start with the installer of Wasa to get started with Wasa we can run a curl command that is also found on their website but I'll leave it here as well as in the description down below if you wanted to just copy that after aoup couple of minutes Wasa should be finished installing now there is one thing to keep in mind and that is the username and password you want to make sure that you copy the username admin as well as your password because you will need it to log in to your wasel dashboard so let's go and do that right now to log into wasal do take note of your public IP of the server in this case my public IP for Wasa is 15923 1739 I'll go ahead and copy Cy this and then open up a new tab and in your browser make sure you type in HTTPS and then paste in the IP now we can click on Advanced proceed and we're
+Now to get your public IP, open up a new tab and type "whatismyIP address" and then select the first link. You should see your public IP address. Copy and paste it into your "Sources". Now you want to do the same for UDP aswell, just in case. Once that's done. Scroll all the way down and click on "Create Firewall". 
+<br />
+<br />
+<img src="https://snipboard.io/xLSHR5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/Z8F0XK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />  
+Once your firewall had been created, we can start adding our virtual machine on to this firewall. The reason why we're doing this is, if you don't create rules, by default SSH is open to the public so anybody or any scanners out there will hit your box and try to break in. However, since we specified our public IP, our virtual machine is only accessible through us. Let's head over to our virtual machines by selecting droplets on the left hand side, and here we can see the public ip of our Wazuh server.
+<br />
+<br />
+<img src="https://snipboard.io/Z8F0XK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+Let's click on Wazuh. From here we want to select "Networking". Scroll down until you see firewalls. Click on "Edit" and then you want to select your firewall that you just created. From your firewall, click on "droplets" and select "Add droplets". Look for your virtual machine in my case its Wazuh. I'll select Wazuh and click on "Add droplet". Now the firewall will be protecting our virtual machine.
+<br />
+<br />
+<img src="https://snipboard.io/mftRUc.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/QX8nJZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/Kin6XW.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/lcsqIg.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />  
+There are a couple of ways that you can access your virtual machine. Firstly you can use something like Putty to use SSH, or from the "Droplets" tab under Wazuh you can click on the "Access" Tab and then select "Launch Droplet Console". Once we have successfully sshed into our virtual machine, we can begin performing some updates and upgrades. 
+<br />
+<br />
+<img src="https://snipboard.io/UFyoHn.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/yS4YKn.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/nLmK0f.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />  
+Now because by default we're under root, we can perform this by typing in "apt-get update && at-et upgrade -y". You will eventually get presented with this screen. We can just hit "Enter" and finally It'll ask you which Services should be restarted. Again, we can just hit "Enter". Once it's been finished updating and upgrading, we can start with the installer of Wazuh. To get started with Wazuh, we can run a curl command that is also found on their website, but I'll leave it here as well as in the description down below if you wanted to just copy.
+<br />
+<br />
+<img src="https://snipboard.io/k4NL72.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/R3b7Iz.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/1Qhplq.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+After a couple of minutes, Wazuh should be finished installing. Now there is one thing to keep in mind and that is the username and password. You want to make sure that you copy the username admin as well as your password, because you will need it to log in to your Wazuh dashboard so let's go and do that right now.
+<br />
+<br />
+<img src="https://snipboard.io/BXFeIq.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+To log into Wazuh, do take note of your public IP of the server, in this case, my public IP for Wazuh is "159.203.17.39". I'll go ahead and copy and then open up a new tab and in your browser make sure you type in "https" and then paste in the IP.
+<br />
+<br />
+<img src="https://snipboard.io/pa1i3q.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/xHgOls.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+Now we're presented with wasa's dashboard we can put in our admin user and paste in the password and now we're in perfect awesome we have our client machine and Wasa up and running the next is to install the hive similar to Wasa we'll Install TheHive be using Ubuntu 20 2.04 to begin select create at the top right corner and select droplet you want to choose the region that's closest to you I'll select Toronto scroll down we'll use create droplet you want to make sure that the hive is placed in the firewall that you created earlier to do that we can click on the hive go into networking scroll down to firewalls click on your firewall go to droplet and then add droplet now we want to type in our host name which is the hive and click on ADD droplet perfect now both wah and the hive is being protected by our firewall and it can only be accessible by Us and nobody else I've opened up a new Tab and sshed into the hive now we can start installing some prerequisites again this could be found in their documentation and I will also leave it in the description so you can just easily copy and paste with the hive we must install four components the first one is Java second is Cassandra third is elastic search and fourth is the hive itself once we finished installing the prerequisites we can start installing Java whenever you are presented with this screen you can go ahead and hit enter once Java had finished installing the next one is Cassandra then we can install elastic search and finally we can install the hive this whole process for installing the hive and Wasa takes about 10 to 15 minutes but once it's finished installing the next step is to configure it now that we have installed ourvirtual machines Wasa and the hive we must configure these to get them to work across the board and we will do this in the next episode that is it for the video and if you had some problems setting these up please let me know in the comment section down below and I'll try my best to help you out
+
   
