@@ -198,21 +198,108 @@ Here we have the option to configure our virtual machine specifications. However
 Now this will give you a nice summary as to what your settings are for this virtual machine. If you're good to go click "Finish" and now we can go ahead and start powering it on. To power it on, you just hit the arrow that says "Start Now". once it's running we should be able to start seeing this Windows 10 setup. So we'll go ahead and select "Next".
 <br />
 <br />
-<img src="https://snipboard.io/GmB6vw.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/nzNcx6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="https://snipboard.io/l0eQiS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/SYOGDK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/z7ZFCK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-  I will click on this and select the drop down click on other and now I'll find the iso image that I just downloaded it was listed under documents and double click the windows ISO at the bottom there's a
+Hit install. Now once you're presented with this activate Windows screen, go ahead and select, "I don't have a product key". And as for the option to select, "Windows 10 Pro". Hit next. Accept the license terms and here you have the option to upgrade or custom install Windows only. I'm going to select custom install Windows only.
 <br />
 <br />
-<img src="https://snipboard.io/ldmF1R.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/XMrw5n.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Under the search shapes, we can search for "PC" and hit enter. Now we can select any icon that you like in my case I'm going to select this PC over here. Now again, do keep in mind this does not need to be pretty, just as long as you create it and work out the workflow, you should be okay. 
+<img src="https://snipboard.io/EKgVeq.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/vAMQ9k.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Accept the license terms and here you have the option to upgrade or custom install Windows only. I'm going to select custom install Windows only. Hit next. And then now with Windows 10 installing in the background, what we want to do is open up
+"Install Sysmon", a web browser. 
+<br />
+<br />
+<img src="https://snipboard.io/uipwWl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/L2je1V.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/SiktXU.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Once you're on this site you want to click on "Download Sysmon" unless you're running Linux, then you can go ahead and click on the link for GitHub, but since I'm on a Windows machine we'll click on download Sysmon. And while that's downloading we should go ahead and start downloading the configuration file that we'll start using for Sysmon. Again all of this will be in the description down below.
+<br />
+<br />
+<img src="https://snipboard.io/SiktXU.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Once we're on this page, we want to scroll down to find "sysmon.config.xml". Click on that. Once you're on this page, you want to click on raw and then it'll load this up, and then all you have to do is right-click click save as, and then you can save it as anything you want. In this case, I'll just type in "Sysmonconfig" and then save it as that.
+<br />
+<br />
+<img src="https://snipboard.io/iJyhfa.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/nLgjdp.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/XoCOfs.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
+Now that Sysmon has successfully been downloaded, what we can do is start extracting it. So I'll right click it and click "Extract all". What we want to do is not double-click this executable, instead, we want to open up a Powershell window and we might need administrator privileges. So why don't we go ahead and open up a Powershell with admin privileges. So we go to the bottom left corner. Click on the Windows button. Type in Powershell. From here you can click on run as administrator or you can right-click and run as administrator.
+<br />
+<br />
+<img src="https://snipboard.io/XoCOfs.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/khoNPj.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+Now we want to make sure that we're in the same directory as the extracted Sysmon. So, in this case, the directory is "C:\\User\Bobby\Downloads\Sysmon". Right-click copy and then all we have to do is jump over to the Powershell prompt. Type in "cd" to change the directory, and just for good practice, put it in a quote. So now we should be in the correct directory.
+<br />
+<br />
+<img src="https://snipboard.io/szKvMC.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/fnAT9S.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/syZRor.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+What we want to do is also make sure that our Sysmon configuration is in the same directory as well. So in this case, we can either copy it or we can cut it. I'll just drag and drop it into that folder. Double-click it to make sure that it's there and indeed it is there.
+<br />
+<br />
+<img src="https://snipboard.io/sGuQj1.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/9Ot4Y0.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br /> 
+You might have noticed that there are various EXE enabled for Sysmon. We want to focus on the Cismon 64 simply because this is a 64-bit machine so all we got to do is just type in sysmon sysmon 64 and then hit tab that should autocomplete for you and if you hit enter nothing will happen it will just show you the help menu and essentially it'll just tell you how to install it and update the configurations and all that other good stuff and to double check if we have or have not installe  
+
+  
+  Under the search shapes, we can search for "PC" and hit enter. Now we can select any icon that you like in my case I'm going to select this PC over here. Now again, do keep in mind this does not need to be pretty, just as long as you create it and work out the workflow, you should be okay. 
 <br />
 <br />
 <img src="https://snipboard.io/Sdpij9.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
